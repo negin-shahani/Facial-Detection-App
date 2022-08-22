@@ -8,6 +8,6 @@ use Google\Cloud\Core\ServiceBuilder;
 class GoogleAPIController extends Controller
 {
     public function detectFaces(){
-        // Code will be added here   
+        $cloud = new ServiceBuilder(['keyFilePath' => base_path('facial-detection-app-KEY.json'), 'projectId' => 'facial-detection-app-360109' ]);   
     }
 }
