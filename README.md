@@ -42,9 +42,16 @@ php artisan make:controller GoogleAPIController
 use Google\Cloud\Core\ServiceBuilder;
 ```
 - Create an instance of the *ServiceBuilder* class:
+
 ```
 $cloud = new ServiceBuilder(['keyFilePath' => base_path('fda.json'),     'projectId' => 'facial-detection-app' ]);
 ```
+
+1. The location of the JSON file using the keyFilePath key. I’ve used the Laravel base_path() helper to refer to the fully qualified app root path.
+
+2. The next option is the projectId. This is the value you grabbed when you created the project in the GCP console.
+
+
 
 
 
