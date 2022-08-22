@@ -31,7 +31,19 @@ composer require google/cloud-vision
 ## Finally, let’s start coding!
 - add the following route to my “routes/web.php” file:
 ```
-Route::get('/', 'SampleController@detectFaces');
+Route::get('/', [GoogleAPIController::class, 'detectFaces']);
+```
+- Make the GoogleAPIController controller in cmd:
+```
+php artisan make:controller GoogleAPIController
+```
+- Go to *GoogleAPIController* controller add a use statement to include the Google Cloud ServiceBuilder class:
+```
+use Google\Cloud\Core\ServiceBuilder;
+```
+- Create an instance of the *ServiceBuilder* class:
+```
+$cloud = new ServiceBuilder(['keyFilePath' => base_path('fda.json'),     'projectId' => 'facial-detection-app' ]);
 ```
 
 
