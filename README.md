@@ -51,6 +51,12 @@ $cloud = new ServiceBuilder(['keyFilePath' => base_path('fda.json'),     'projec
 
 2. The next option is the projectId. This is the value you grabbed when you created the project in the GCP console.
 
+- Create an instance of the VisionClient class:
+```
+$vision = $cloud->vision();
+```
+
+- We’ll be using the following image as the example. Feel free to download this image, name it “friends.jpg” and place it in your “public” folder.
 
 
 
