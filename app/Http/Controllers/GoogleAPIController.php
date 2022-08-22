@@ -14,5 +14,7 @@ class GoogleAPIController extends Controller
         $output = imagecreatefromjpeg(public_path('friends.jpg'));
 
         $image = $vision->image(file_get_contents(public_path('friends.jpg')), ['FACE_DETECTION']);
+        
+        $results = $vision->annotate($image);
     }
 }
