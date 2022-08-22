@@ -28,3 +28,13 @@ php artisan key:generate
 ```
 composer require google/cloud-vision
 ```
+## Finally, let’s start coding!
+- add the following route to my “routes/web.php” file:
+```
+Route::get('/', 'SampleController@detectFaces');
+```
+
+
+
+
+
