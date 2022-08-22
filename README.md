@@ -58,7 +58,7 @@ $vision = $cloud->vision();
 
 - We’ll be using the following image as the example. Feel free to download this image, name it “friends.jpg” and place it in your “public” folder.
 
-
+<a href="https://unsplash.com/@matheusferrero?utm_source=medium&utm_medium=referral" target="blank"><img align="center" src="https://github.com/negin-shahani/Facial-Detection-App/blob/main/public/friends.jpg" title = "friends.jpg" alt="friends.jpg" height="400" width="600"/> </a>
 
 
 
